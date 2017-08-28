@@ -43,16 +43,46 @@ $(document).ready(function(){
 
 	var window_height = $('body').height();
 	var top_line_height = $('.top_line').height();
-	var new_height = (window_height - top_line_height -10)*100/window_height;
-	$('.left_wrapper').css({'height':new_height + 'vh'});
+	var top_right_height = $('.right__top_line').height();
+	var right_middle_height = $('.right_middle').height();
+	var bottom_fixed_height = $('.left_fixed').innerHeight();
+	var new_height = (window_height - top_line_height)*100/window_height;
+	var new_left_height = (window_height - top_line_height - bottom_fixed_height)*100/window_height;
+	var new_right_bottom = (window_height - top_line_height - top_right_height - right_middle_height )*100/window_height;
+
+	console.log(bottom_fixed_height);
+
+	$('.left_wrapper').css({'height':new_left_height + 'vh'});
 	$('.right_wrapper').css({'height':new_height + 'vh'});
+	$('.right_bottom').css({'height':new_right_bottom + 'vh'});
 
 
 	var left_wrapper_width = $('.left_wrapper').innerWidth();
-	$('.left_fixed').innerWidth(left_wrapper_width - 5);
+	$('.left_fixed').innerWidth(left_wrapper_width-10);
+
 	$( window ).resize(function() {
+		var window_height = $('body').height();
+	var top_line_height = $('.top_line').height();
+	var top_right_height = $('.right__top_line').height();
+	var right_middle_height = $('.right_middle').height();
+	var bottom_fixed_height = $('.left_fixed').innerHeight();
+	var new_height = (window_height - top_line_height)*100/window_height;
+	var new_left_height = (window_height - top_line_height - bottom_fixed_height)*100/window_height;
+	var new_right_bottom = (window_height - top_line_height - top_right_height - right_middle_height )*100/window_height;
+
+	console.log(bottom_fixed_height);
+
+	$('.left_wrapper').css({'height':new_left_height + 'vh'});
+	$('.right_wrapper').css({'height':new_height + 'vh'});
+	$('.right_bottom').css({'height':new_right_bottom + 'vh'});
+
+
+	var left_wrapper_width = $('.left_wrapper').innerWidth();
+	$('.left_fixed').innerWidth(left_wrapper_width-10);
 	  	var left_wrapper_width = $('.left_wrapper').innerWidth();
-		$('.left_fixed').innerWidth(left_wrapper_width - 5);
+	  	var new_right_bottom = (window_height - top_line_height - top_right_height - right_middle_height )*100/window_height;
+		$('.left_fixed').innerWidth(left_wrapper_width);
+		$('.right_bottom').css({'height':new_right_bottom + 'vh'});
 	});
 	console.log(left_wrapper_width);
 	

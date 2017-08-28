@@ -53,11 +53,10 @@ body{
 	height: 50vh;
 }
 .right_bottom{
-	height: calc(40vh - 10px);
+	height: 40vh;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
-.left_wrapper,
 .top_list,
 .right_middle{
 	border: 1px solid #ccc;
@@ -87,6 +86,11 @@ body{
  .right_bottom{
  	padding: 0 5px;
  }
+ .right_bottom,
+ .right_middle{
+ 	border-left: 1px solid #ccc;
+ }
+ 
  .top_left{
 	display: inline-block;
 	width: 100%;
@@ -115,6 +119,7 @@ body{
 .left_fixed{
     position: fixed;
     bottom: 0;
+    left: 10px;
     z-index: 1;
     width: 24%;
     min-width: 230px;
@@ -190,17 +195,10 @@ body{
  	background: #f4f4f4;
  }
 .right__top_line_form button{
-	margin-right: -3px;
 	border-radius: 0;
 	padding: 2px 10px;
 	border-left: none;
 }
 .right__top_line_form button:first-child{
 	border-left: 1px solid #ccc;
-}
-.right__top_line_form button:nth-child(3),
-.right__top_line_form button:nth-child(7),
-.right__top_line_form button:nth-child(9),
-.right__top_line_form button:nth-child(11){
-	margin-right: -4px;
 }
