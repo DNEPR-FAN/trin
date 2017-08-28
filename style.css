@@ -2,7 +2,7 @@
 body{
 	background: #ededed;
 	min-width: 1024px;
-	min-height: calc(100vh - 10px);
+	min-height: 100vh;
 	font-size: 12px;
 }
 .show{
@@ -36,8 +36,8 @@ body{
 	padding: 0;
 }
 .main_wrapper{
-	height: calc(100vh - 10px);
-	margin: 0 10px 10px 10px;
+	height: 100vh;
+	margin: 0 10px 0 10px;
 	background: #fff;
 }
 .top_line{
@@ -54,6 +54,8 @@ body{
 }
 .right_bottom{
 	height: calc(40vh - 10px);
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 .left_wrapper,
 .top_list,
@@ -112,12 +114,12 @@ body{
  }
 .left_fixed{
     position: fixed;
-    bottom: 10px;
+    bottom: 0;
     z-index: 1;
     width: 24%;
     min-width: 230px;
     background: #fff;
-    padding: 10px;
+    padding: 10px 0;
 }
 /* .add_file{
 	display: inline-block;
@@ -168,7 +170,7 @@ body{
 }
 .next_prev{
 	display: inline-block;
-	width: 100%;
+	width: 98%;
 }
 .prev,
 .next{

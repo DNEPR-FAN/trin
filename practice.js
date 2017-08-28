@@ -49,10 +49,10 @@ $(document).ready(function(){
 
 
 	var left_wrapper_width = $('.left_wrapper').innerWidth();
-	$('.left_fixed').innerWidth(left_wrapper_width + 2);
+	$('.left_fixed').innerWidth(left_wrapper_width - 5);
 	$( window ).resize(function() {
 	  	var left_wrapper_width = $('.left_wrapper').innerWidth();
-		$('.left_fixed').innerWidth(left_wrapper_width + 2);
+		$('.left_fixed').innerWidth(left_wrapper_width - 5);
 	});
 	console.log(left_wrapper_width);
 	
