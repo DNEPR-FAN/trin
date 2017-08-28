@@ -86,10 +86,6 @@ body{
  .right_bottom{
  	padding: 0 5px;
  }
- .right_bottom,
- .right_middle{
- 	border-left: 1px solid #ccc;
- }
  
  .top_left{
 	display: inline-block;
@@ -100,6 +96,7 @@ body{
  .top_left button{
  	float: right;
  	padding: 2px;
+ 	margin-right: 5px;
  }
  .form_item{
  	width: 100%;
@@ -107,6 +104,7 @@ body{
  }
  .form_item label{
  	width: 30%;
+ 	text-align: right;
  }
  .form_item select,
  .form_item input{
@@ -125,6 +123,7 @@ body{
     min-width: 230px;
     background: #fff;
     padding: 10px 0;
+    border: 1px solid #ccc;
 }
 /* .add_file{
 	display: inline-block;
@@ -147,6 +146,7 @@ body{
 .save_create{
 	display: inline-block;
     float: right;
+    margin-right: 1%;
 }
 .create,
 .save{
@@ -175,7 +175,8 @@ body{
 }
 .next_prev{
 	display: inline-block;
-	width: 98%;
+	width: 96%;
+	margin-left: 2%;
 }
 .prev,
 .next{
@@ -189,6 +190,9 @@ body{
 }
 .next{
 	float: right;
+}
+.left_wrapper_main{
+	border: 1px solid #ccc;
 }
  /* ========RIGHT BLOCK ==============*/
  .right__top_line{
