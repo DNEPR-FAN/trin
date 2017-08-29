@@ -122,7 +122,7 @@ body{
     width: 24%;
     min-width: 230px;
     background: #fff;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
     border: 1px solid #ccc;
 }
 /* .add_file{
@@ -175,8 +175,7 @@ body{
 }
 .next_prev{
 	display: inline-block;
-	width: 91%;
-	margin-left: 2%;
+	width: 100%;
 }
 .prev,
 .next{
@@ -187,9 +186,11 @@ body{
 }
 .prev{
 	float: left;
+	margin-left: 5px;
 }
 .next{
 	float: right;
+	margin-right: 25px;
 }
 .left_wrapper_main{
 	border: 1px solid #ccc;
