@@ -124,6 +124,7 @@ body{
     background: #fff;
     padding: 10px 0 0 0;
     border: 1px solid #ccc;
+    height: 130px;
 }
 /* .add_file{
 	display: inline-block;

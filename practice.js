@@ -44,13 +44,13 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 
-			var window_height = $('body').height();
+		var window_height = $('body').height();
 		var top_line_height = $('.top_line').height();
 		var right_top_line = $('.right__top_line').height();
 		var right_middle_height = $('.right_middle').height();
 		var bottom_fixed_height = $('.left_fixed').innerHeight();
 		var new_height = (window_height - top_line_height)*100/window_height;
-		var new_left_height = (window_height - top_line_height - bottom_fixed_height)*100/window_height;
+		var new_left_height = (window_height - top_line_height - 130)*100/window_height;
 		var new_right_bottom = (window_height - top_line_height - right_top_line - right_middle_height )*100/window_height;
 
 		console.log(bottom_fixed_height);
@@ -60,11 +60,9 @@ $(document).ready(function(){
 		$('.right_bottom').css({'height':new_right_bottom + 'vh'});
 
 
-		var left_wrapper_width = $('.left_wrapper').innerWidth();
-		$('.left_fixed').innerWidth(left_wrapper_width-20);
-	  	var left_wrapper_width = $('.left_wrapper').innerWidth();
+		var left_wrapper_width = $('.left_wrapper_main').width();
+		$('.left_fixed').width(left_wrapper_width);
 	  	var new_right_bottom = (window_height - top_line_height - right_top_line - right_middle_height )*100/window_height;
-		$('.left_fixed').innerWidth(left_wrapper_width);
 		$('.right_bottom').css({'height':new_right_bottom + 'vh'});
 });
 	$( window ).resize(function() {
@@ -112,7 +110,7 @@ $(document).ready(function(){
 		var right_middle_height = $('.right_middle').height();
 		var bottom_fixed_height = $('.left_fixed').innerHeight();
 		var new_height = (window_height - top_line_height)*100/window_height;
-		var new_left_height = (window_height - top_line_height - bottom_fixed_height)*100/window_height;
+		var new_left_height = (window_height - top_line_height - 130)*100/window_height;
 		var new_right_bottom = (window_height - top_line_height - right_top_line - right_middle_height )*100/window_height;
 
 		console.log(bottom_fixed_height);
@@ -122,11 +120,12 @@ $(document).ready(function(){
 		$('.right_bottom').css({'height':new_right_bottom + 'vh'});
 
 
-		var left_wrapper_width = $('.left_wrapper').innerWidth();
-		$('.left_fixed').innerWidth(left_wrapper_width-20);
-	  	var left_wrapper_width = $('.left_wrapper').innerWidth();
+		var left_wrapper_width = $('.left_wrapper_main').width();
+		$('.left_fixed').width(left_wrapper_width);
+		if (left_wrapper_width != $('.left_fixed').width()) {
+			$('.left_fixed').width(left_wrapper_width);
+		}
 	  	var new_right_bottom = (window_height - top_line_height - right_top_line - right_middle_height )*100/window_height;
-		$('.left_fixed').innerWidth(left_wrapper_width);
 		$('.right_bottom').css({'height':new_right_bottom + 'vh'});
 	});
 	
