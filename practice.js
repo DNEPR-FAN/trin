@@ -30,7 +30,7 @@ $(document).ready(function(){
 			$('.right_wrapper').addClass('col-xs-12');
 		} else{
 			$('.left_wrapper').removeClass('hide');
-			$('.left_wrapper').addClass('show col-xs-9');
+			$('.left_wrapper').addClass('show');
 			$('.right_wrapper').removeClass('col-xs-12');
 			$('.right_wrapper').addClass('col-xs-9');
 		}

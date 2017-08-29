@@ -146,7 +146,7 @@ body{
 .save_create{
 	display: inline-block;
     float: right;
-    margin-right: 1%;
+    margin-right: 20px;
 }
 .create,
 .save{
@@ -175,7 +175,7 @@ body{
 }
 .next_prev{
 	display: inline-block;
-	width: 96%;
+	width: 91%;
 	margin-left: 2%;
 }
 .prev,
