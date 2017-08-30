@@ -31,6 +31,8 @@ $(document).ready(function(){
 			$('.left_wrapper_main').addClass('hide');
 			$('.right_wrapper').removeClass('col-xs-9');
 			$('.right_wrapper').addClass('col-xs-12');
+			$('.right_middle').css({'border-left':'1px solid #ccc'});
+			$('.right_bottom').css({'border-left':'1px solid #ccc'});
 		} else{
 			$('.left_wrapper_main').removeClass('hide');
 			$('.left_wrapper_main').addClass('show');
