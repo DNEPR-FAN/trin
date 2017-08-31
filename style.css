@@ -44,6 +44,7 @@ body{
 	background: #ededed;
 	display: inline-block;
     width: 100%;
+    height: 29px;
 }
 .right_wrapper,
 .left_wrapper{
@@ -57,6 +58,10 @@ body{
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
+.right_middle,
+.right_bottom{
+	border-left:1px solid #ccc;
+}
 .top_list,
 .right_middle{
 	border: 1px solid #ccc;
@@ -68,9 +73,6 @@ body{
 .right_middle,
 .right_bottom{
 	overflow: auto;
-}
-.right_middle{
-	border-left: none;
 }
 .go_back{
 	padding: 5px 10px 0 10px;
@@ -119,12 +121,12 @@ body{
     bottom: 0;
     left: 10px;
     z-index: 1;
-    width: 24%;
-    min-width: 230px;
     background: #fff;
     padding: 10px 0 0 0;
-    border: 1px solid #ccc;
     height: 130px;
+    width: calc(25% - 20px);
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
 }
 /* .add_file{
 	display: inline-block;
@@ -194,11 +196,14 @@ body{
 	margin-right: 25px;
 }
 .left_wrapper_main{
-	border: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
 }
  /* ========RIGHT BLOCK ==============*/
  .right__top_line{
  	background: #f4f4f4;
+ 	height: 33px;
+ 	border-left: 1px solid #ccc;
  }
 .right__top_line_form button{
 	border-radius: 0;
