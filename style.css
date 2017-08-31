@@ -39,6 +39,7 @@ body{
 	height: 100vh;
 	margin: 0 10px 0 10px;
 	background: #fff;
+	border-bottom: 1px solid #ccc;
 }
 .top_line{
 	background: #ededed;
